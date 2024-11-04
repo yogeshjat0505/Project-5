@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Box Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 100px);
+            grid-template-rows: repeat(5, 100px);
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d6eaff;
+            border: 12px solid #1e90ff;
+            font-size: 50px;
+            font-weight:normal;
+            color: black;
+        }
+
+        .central {
+            grid-column: 2 / span 4;
+            grid-row: 1 / span 4;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 10px;
+            border-left: none;
+            border-right: none;
+        }
+        #id1{
+            border-bottom: none;
+            border-width: ;
+        }
+        #id2{
+            border-right: none;
+        }
+        #id3{
+            border-left: none;
+        }
+        #id3{
+            border-left: none;
+            border-right: none;
+        }
+        #id4{
+            border-bottom: none;
+        }
+        #id5{
+            display: flex;
+            align-items: baseline;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="id1">1</div>
+        <div class="box" id="id4">2</div>
+        <div class="box" id="id1">3</div>
+        <div class="box" id="id4">4</div>
+        <div class="box" id="id1">5</div>
+        <div class="box" id="id4">6</div>
+        <div class="central box" id="id5">8</div> <!-- Central box with 8 -->
+        <div class="box" id="id1">7</div>
+        <div class="box" id="id4">9</div>
+        <div class="box">10</div>
+        <div class="box" id="id3">11</div>
+        <div class="box" id="id2">12</div>
+        <div class="box" id="id2">13</div>
+        <div class="box" id="id2">14</div>
+        <div class="box">15</div>
+    </div>
+</body>
+</html>
